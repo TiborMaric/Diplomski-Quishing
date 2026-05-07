@@ -1,4 +1,5 @@
 import { cookies, headers } from "next/headers";
+import Link from "next/link";
 import { t } from "@/lib/i18n";
 import { recordScan } from "@/lib/telemetry";
 
@@ -49,12 +50,12 @@ export default async function LandingPage() {
         {t("landing.heroBody")}
       </p>
 
-      <a
+      <Link
         href="/form"
         className="mt-10 inline-flex items-center justify-center rounded-md bg-zinc-900 px-8 py-4 text-lg font-semibold text-white shadow-md transition hover:bg-zinc-800 hover:shadow-lg"
       >
         {t("landing.cta")}
-      </a>
+      </Link>
 
       <p className="mt-12 text-sm text-zinc-500">{t("common.instagramLine")}</p>
       <p className="mt-2 text-xs text-zinc-400">{t("landing.deadline")}</p>

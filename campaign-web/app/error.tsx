@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { t } from "@/lib/i18n";
 
 export default function Error({
@@ -20,12 +21,12 @@ export default function Error({
         >
           {t("errors.retry")}
         </button>
-        <a
+        <Link
           href="/"
           className="rounded-md border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-800"
         >
           {t("errors.home")}
-        </a>
+        </Link>
       </div>
     </main>
   );
