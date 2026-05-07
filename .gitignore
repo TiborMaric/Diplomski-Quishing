@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build output
+.next/
+out/
+build/
+dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Testing / cache
+coverage/
+.turbo/
+.cache/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Flutter (Phase 2)
+scanner-app/.dart_tool/
+scanner-app/.flutter-plugins
+scanner-app/.flutter-plugins-dependencies
+scanner-app/build/
+scanner-app/.idea/
+scanner-app/.gradle/
+scanner-app/local.properties
+
+# Anonymized analysis exports — never commit raw PII
+shared-docs/analysis/exports/raw/

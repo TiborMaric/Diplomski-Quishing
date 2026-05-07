@@ -1,0 +1,49 @@
+{
+  "common": {
+    "instagramLine": "Pobjednik će biti objavljen na Instagram storyju @placeholder"
+  },
+  "landing": {
+    "eyebrow": "Sveučilišna nagradna igra",
+    "title": "Sveučilišne nagrade 2026",
+    "subtitle": "Sudjeluj i osvoji ekskluzivnu sveučilišnu odjeću",
+    "heroBody": "U sklopu nagradne igre dijelimo hoodice i majice s logom sveučilišta kao zahvalu studentima za njihov angažman. Prijava traje samo nekoliko sekundi.",
+    "prizeOneLabel": "Glavna nagrada",
+    "prizeOneName": "Sveučilišna hoodica",
+    "prizeTwoLabel": "Druga nagrada",
+    "prizeTwoName": "Sveučilišna majica",
+    "cta": "Sudjeluj u nagradnoj igri",
+    "deadline": "Nagradna igra traje do 13. srpnja 2026."
+  },
+  "form": {
+    "title": "Prijava za nagradnu igru",
+    "subtitle": "Unesi svoje ime i prezime za sudjelovanje u izvlačenju.",
+    "firstNameLabel": "Ime",
+    "firstNamePlaceholder": "Tvoje ime",
+    "lastNameLabel": "Prezime",
+    "lastNamePlaceholder": "Tvoje prezime",
+    "submitButton": "Pošalji prijavu",
+    "submitting": "Šaljem...",
+    "privacyNote": "Tvoji podaci čuvaju se anonimno i koriste se isključivo za potrebe nagradne igre."
+  },
+  "debrief": {
+    "title": "Hvala na sudjelovanju",
+    "teaser1": "Ova stranica nakon predaje obrasca prikazuje edukativni debriefing o istraživanju i o riziku od QR phishinga („quishinga”) u sveučilišnom okruženju.",
+    "teaser2": "Cilj istraživanja je razumjeti koliko se studenata oslanja isključivo na vizualni dojam QR koda i pratećeg poziva na akciju, bez dodatne provjere odredišta.",
+    "teaser3": "Konačni tekst, izrađen u suradnji s mentorom, bit će postavljen prije pokretanja kampanje 13. svibnja 2026.",
+    "placeholderNotice": "Stub: privremeni sadržaj. Pravi debriefing dolazi u kasnijem sprintu."
+  },
+  "errors": {
+    "title": "Došlo je do greške",
+    "body": "Nešto je pošlo po krivu prilikom obrade tvog zahtjeva. Možeš pokušati ponovno ili se vratiti na početnu stranicu.",
+    "retry": "Pokušaj ponovno",
+    "home": "Natrag na početnu",
+    "tooShort": "Unos je prekratak (najmanje 2 znaka).",
+    "tooLong": "Unos je predug (najviše 60 znakova).",
+    "invalidChars": "Dozvoljena su samo slova, razmaci, crtica i apostrof."
+  },
+  "notFound": {
+    "title": "Stranica nije pronađena",
+    "body": "Tražena stranica ne postoji. Možda je premještena ili je poveznica netočna.",
+    "home": "Natrag na početnu"
+  }
+}
