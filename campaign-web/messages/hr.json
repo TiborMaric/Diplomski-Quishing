@@ -1,0 +1,56 @@
+{
+  "common": {
+    "instagramLine": "Pobjednik će biti objavljen na Instagram storyju @szfvz u nedjelju 14.6.2026. Sretno svima!"
+  },
+  "landing": {
+    "eyebrow": "TVZ nagradna igra",
+    "title": "TVZ Summer party 2026",
+    "subtitle": "Sudjeluj i osvoji ekskluzivne nagrade!",
+    "heroBody": "U sklopu nagradne igre dijelimo Bluetooth zvučnik JBL Charge 6, 2X prijenosne baterije ANKER Zolo PowerBank 20000mAh, X5 TVZ majice. Prijava traje samo nekoliko sekundi.",
+    "prizeOneLabel": "Glavna nagrada",
+    "prizeOneName": "JBL Charge 6 Bluetooth zvučnik",
+    "prizeTwoLabel": "Druga nagrada",
+    "prizeTwoName": "2X prijenosne baterije ANKER Zolo PowerBank 20000mAh",
+    "prizeThreeLabel": "Treća nagrada",
+    "prizeThreeName": "X5 TVZ majica",
+    "cta": "Stisni i sudjeluj u nagradnoj igri"
+  },
+  "form": {
+    "title": "Prijava za nagradnu igru",
+    "subtitle": "Unesi svoje ime i prezime za sudjelovanje u izvlačenju.",
+    "firstNameLabel": "Ime",
+    "firstNamePlaceholder": "Tvoje ime",
+    "lastNameLabel": "Prezime",
+    "lastNamePlaceholder": "Tvoje prezime",
+    "submitButton": "Pošalji prijavu",
+    "submitting": "Šaljem...",
+    "privacyNote": "Tvoji podaci čuvaju se anonimno i koriste se isključivo za potrebe nagradne igre."
+  },
+  "debrief": {
+    "title": "Hvala na sudjelovanju",
+    "teaser1": "Objava dobitnika biti će u nedjelju 14.6.2026. na Instagram storyju @szfvz. Sretno svima!"
+  },
+  "errors": {
+    "title": "Došlo je do greške",
+    "body": "Nešto je pošlo po krivu prilikom obrade tvog zahtjeva. Možeš pokušati ponovno ili se vratiti na početnu stranicu.",
+    "retry": "Pokušaj ponovno",
+    "home": "Natrag na početnu",
+    "tooShort": "Unos je prekratak (najmanje 2 znaka).",
+    "tooLong": "Unos je predug (najviše 60 znakova).",
+    "invalidChars": "Dozvoljena su samo slova, razmaci, crtica i apostrof."
+  },
+  "notFound": {
+    "title": "Stranica nije pronađena",
+    "body": "Tražena stranica ne postoji. Možda je premještena ili je poveznica netočna.",
+    "home": "Natrag na početnu"
+  },
+  "poster": {
+    "eyebrow": "Sveučilišna nagradna igra",
+    "headline": "Sveučilišne nagrade 2026",
+    "subheadline": "Skeniraj i osvoji hoodicu ili majicu",
+    "qrAlt": "QR kod za nagradnu igru",
+    "scanInstruction": "Skeniraj kod telefonom za sudjelovanje",
+    "deadline": "Nagradna igra traje do 13. srpnja 2026.",
+    "footer": "quishing-thesis · 2026"
+  }
+}

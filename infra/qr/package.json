@@ -1,0 +1,19 @@
+{
+  "name": "qr-generator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone QR generator for the Quishing campaign poster.",
+  "scripts": {
+    "gen": "tsx generate.ts"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/qrcode": "^1.5.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
