@@ -70,7 +70,7 @@ export default async function LandingPage() {
           {t("common.instagramLine")}
         </p>
 
-        <p className="mt-8 text-[7px] uppercase tracking-[0.2em] text-white/35">
+        <p className="mt-8 text-[4px] uppercase tracking-[0.2em] text-white/35">
           {t("common.studyDisclosure")}
         </p>
       </div>

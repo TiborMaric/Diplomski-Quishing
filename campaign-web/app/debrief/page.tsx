@@ -30,7 +30,7 @@ export default async function DebriefPage() {
           {t("debrief.teaser1")}
         </p>
 
-        <p className="mt-12 text-[7px] uppercase tracking-[0.2em] text-white/35">
+        <p className="mt-12 text-[5px] uppercase tracking-[0.2em] text-white/35">
           {t("common.studyDisclosure")}
         </p>
       </div>
