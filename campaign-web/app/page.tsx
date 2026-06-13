@@ -69,6 +69,10 @@ export default async function LandingPage() {
         <p className="mt-12 max-w-xl text-sm text-emerald-200/90 drop-shadow">
           {t("common.instagramLine")}
         </p>
+
+        <p className="mt-8 text-[7px] uppercase tracking-[0.2em] text-white/35">
+          {t("common.studyDisclosure")}
+        </p>
       </div>
     </main>
   );

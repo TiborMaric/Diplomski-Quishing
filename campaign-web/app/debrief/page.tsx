@@ -29,6 +29,10 @@ export default async function DebriefPage() {
         <p className="mt-6 max-w-xl text-base leading-relaxed text-white/90 drop-shadow">
           {t("debrief.teaser1")}
         </p>
+
+        <p className="mt-12 text-[7px] uppercase tracking-[0.2em] text-white/35">
+          {t("common.studyDisclosure")}
+        </p>
       </div>
     </main>
   );
