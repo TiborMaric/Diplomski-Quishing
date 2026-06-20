@@ -1,4 +1,6 @@
 import { cookies } from "next/headers";
+import Link from "next/link";
+
 import { t } from "@/lib/i18n";
 import { markReachedDebrief, recordDebriefInteraction } from "@/lib/telemetry";
 
@@ -30,9 +32,13 @@ export default async function DebriefPage() {
           {t("debrief.teaser1")}
         </p>
 
-        <p className="mt-12 text-[5px] uppercase tracking-[0.2em] text-white/35">
-          {t("common.studyDisclosure")}
-        </p>
+        <Link
+          href="/education"
+          className="mt-10 inline-flex items-center justify-center rounded-full bg-pink-500 px-8 py-3 text-sm font-extrabold uppercase tracking-[0.15em] text-white shadow-[0_10px_30px_rgba(236,72,153,0.45)] transition hover:bg-pink-400 hover:shadow-[0_14px_38px_rgba(236,72,153,0.6)]"
+        >
+          {t("debrief.educationCta")}
+        </Link>
+
       </div>
     </main>
   );

@@ -70,6 +70,17 @@ export async function markReachedDebrief(sessionToken: string): Promise<void> {
   }
 }
 
+export async function markReachedEducation(sessionToken: string): Promise<void> {
+  const supabase = getServiceClient();
+  const { error } = await supabase
+    .from("scan_events")
+    .update({ reached_education: true })
+    .eq("session_token", sessionToken);
+  if (error) {
+    throw new Error(`markReachedEducation failed: ${error.message}`);
+  }
+}
+
 export async function recordDebriefInteraction(
   sessionToken: string,
   action: DebriefAction

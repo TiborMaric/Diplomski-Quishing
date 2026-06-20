@@ -26,7 +26,7 @@ export default async function FormPage() {
         <p className="mt-6 text-center text-xs text-emerald-200/70">
           {t("form.privacyNote")}
         </p>
-        <p className="mt-4 text-center text-[5px] uppercase tracking-[0.2em] text-white/35">
+        <p className="mt-4 text-center text-[2px] uppercase tracking-[0.2em] text-white/35">
           {t("common.studyDisclosure")}
         </p>  
       </div>

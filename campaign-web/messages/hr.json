@@ -29,7 +29,8 @@
   },
   "debrief": {
     "title": "Hvala na sudjelovanju",
-    "teaser1": "Objava dobitnika biti će u nedjelju 14.6.2026. na Instagram storyju @szfvz. Sretno svima!"
+    "teaser1": "Objava dobitnika biti će u nedjelju 14.6.2026. na Instagram storyju @szfvz. Sretno svima!",
+    "educationCta": "Saznaj više - anatomija prijevare"
   },
   "errors": {
     "title": "Došlo je do greške",
@@ -53,5 +54,45 @@
     "scanInstruction": "Skeniraj kod telefonom za sudjelovanje",
     "deadline": "Nagradna igra traje do 13. srpnja 2026.",
     "footer": "quishing-thesis · 2026"
+  },
+  "education": {
+    "eyebrow": "Edukacija",
+    "heroTitle": "Postao si dio istraživanja o quishingu",
+    "heroBody": "TVZ Summer Party „nagradna igra” zapravo je bila kontrolirana simulacija QR phishinga - quishinga - provedena u sklopu diplomskog rada na TVZ-u. Većina ljudi propusti znakove koji su bili vidljivi. Upravo to napadač računa. U nastavku ti pokazujem šest znakova koje sam namjerno postavio.",
+    "anatomyTitle": "Anatomija prijevare",
+    "anatomyIntro": "Šest znakova bilo je vidljivo dok si bio/la na stranici - neki u domeni, neki u podnožju, neki u onome što stranica nije imala. Pogledaj sliku, a ispod ti objašnjavam svaki znak.",
+    "screenshotAlt": "Snimka zaslona lažne nagradne stranice s označenim znakovima",
+    "clue1Title": "Lažna Instagram oznaka - @szfvz vs @sztvz",
+    "clue1Body": "Pravi Instagram račun TVZ-ovog studentskog zbora je @sztvz. U kampanji je korištena oznaka @szfvz - jedno slovo razlike (F umjesto T). Lookalike oznake klasičan su phishing trik: dovoljno slične da ne uznemire, dovoljno različite da vode na lažni profil.",
+    "clue2Title": "Riječ „quish” u URL-u",
+    "clue2Body": "Domena stranice bila je tvz-quish-nagradna-igra-2026.vercel.app. U njoj se nalazi riječ „quish” - kratica od quishinga, vrste napada koju ova kampanja simulira.",
+    "clue3Title": "Sitni tekst u podnožju",
+    "clue3Body": "Na svakoj stranici, u sitnom tekstu na samom dnu, pisalo je: „diplomski rad • Istraživanje o quishingu • 2026”. Riječ quishing bila je tu cijelo vrijeme - samo u malim slovima, lako se previdi.",
+    "clue4Title": "Forma traži samo ime i prezime",
+    "clue4Body": "Stvarna nagradna igra mora moći isporučiti nagradu - što znači da treba kontakt podatak (email, broj mobitela, JMBAG…). Tražiti samo ime i prezime, bez ijednog načina da te kontaktiraju teško da može biti realno. (Posebno za veće nagradne igre koje obećavaju vrijedne nagrade.)",
+    "clue5Title": "Nema pravilnika nagradne igre",
+    "clue5Body": "Sve službene nagradne igre u Hrvatskoj zakonski moraju imati objavljen pravilnik (uvjete sudjelovanja). Stranica koja obećava nagradu bez ijednog formalnog dokumenta - crveni alarm. (Ovo se više odnosi na velike nagradne igre na razini cijele Hrvatske i slično)",
+    "clue6Title": "Bez službenog TVZ identiteta",
+    "clue6Body": "Službena komunikacija TVZ-a uvijek je vizualno potpisana - logotipom, identitetom studentskog zbora, jasnim spomenom institucije koja garantira sadržaj. Naša stranica imala je samo riječ „TVZ” u tekstu, bez ikakvog službenog vizualnog identiteta. Dok je na posteru bio lažni TVZ logo.",
+    "scorecardTitle": "Koliko bi znakova ti uhvatio/la?",
+    "scorecardIntro": "Označi sve znakove koje si zapravo primijetio/la dok si bio na stranici, ali si mislio/la da su slučajne greške. Ne brini ako rezultat bude nizak - upravo to ova vrsta napada iskorištava.",
+    "scorecardItem1": "Primijetio/la sam pogrešnu Instagram oznaku (@szfvz umjesto @sztvz).",
+    "scorecardItem2": "Primijetio/la sam riječ „quish” u URL-u.",
+    "scorecardItem3": "Pročitao/la sam sitni tekst u podnožju.",
+    "scorecardItem4": "Pitao/la sam se: kako će me kontaktirati kad imaju samo ime i prezime?",
+    "scorecardItem5": "Tražio/la sam pravilnik nagradne igre.",
+    "scorecardItem6": "Primijetio/la sam da nema službenog TVZ logotipa ili identiteta.",
+    "scorecardResultLabel": "Uhvatio si",
+    "scorecardVerdictZero": "Nijedan? Normalno je, upravo na tome ova vrsta napada živi. Sad ih znaš.",
+    "scorecardVerdictLow": "Malo, ali već znaš za njih. Sljedeći put će ti pažnja biti drukčija.",
+    "scorecardVerdictMid": "Solidno. Pola znakova si uhvatio - što je iznad prosjeka.",
+    "scorecardVerdictHigh": "Odlično. Trening za phishing svjesnost ti je očito već u glavi.",
+    "defenseTitle": "Što sljedeći put treba provjeriti",
+    "defense1": "Prije nego što klikneš - provjeri URL u pregledu kamere.",
+    "defense2": "Pazi da domena bude točno onakva kakvu očekuješ (npr. tvz.hr) i da koristi https://.",
+    "defense3": "Ne ostavljaj osobne podatke na stranicama koje ne prepoznaješ.",
+    "defense4": "Budi sumnjičav prema svakom „nagradnom” ili „hitnom” mamcu.",
+    "defenseFinal": "Razmisli prije nego što skeniraš.",
+    "backCta": "Natrag na početnu"
   }
 }
