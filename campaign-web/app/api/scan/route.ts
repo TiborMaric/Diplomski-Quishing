@@ -11,16 +11,18 @@ import {
   type VTStats,
 } from "@/lib/virustotal";
 
-// Vercel Hobby caps function duration at 10 s; the wrapper's polling loop
-// is bounded to ~8 s for the worst case.
-export const maxDuration = 10;
+// Vercel Pro allows up to 300 s; 60 s leaves ample headroom for the
+// wrapper's polling loop (~25 s worst case) plus upstream latency.
+export const maxDuration = 60;
 export const runtime = "nodejs";
 
 const HOURS_TO_MS = 60 * 60 * 1000;
 const MINUTES_TO_MS = 60 * 1000;
 
 const CACHE_TTL_KNOWN_MS = 24 * HOURS_TO_MS;
-const CACHE_TTL_UNKNOWN_MS = 15 * MINUTES_TO_MS;
+// Short TTL: an "unknown" is usually VirusTotal still working, so a
+// rescan a minute later should hit the API again rather than the cache.
+const CACHE_TTL_UNKNOWN_MS = 2 * MINUTES_TO_MS;
 
 const Body = z.object({
   url: z

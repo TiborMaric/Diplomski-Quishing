@@ -18,6 +18,8 @@ class AppStrings {
 
   // Result screen — common
   static const String checkingUrl = 'Provjeravam URL...';
+  static const String checkingUrlSlow =
+      'Ovaj link provjerava se prvi put, pa analiza traje malo dulje. Pričekaj još koji trenutak.';
   static const String scanAgain = 'Skeniraj ponovno';
   static const String retry = 'Pokušaj ponovno';
   static const String errorTitle = 'Neuspjela provjera';

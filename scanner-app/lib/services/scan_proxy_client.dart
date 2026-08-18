@@ -13,7 +13,10 @@ import 'package:quishing_scanner/strings.dart';
 /// errors are converted into `ScanResult.unknownWithError` so the result
 /// screen always has something to render.
 class ScanProxyClient {
-  static const Duration _timeout = Duration(seconds: 15);
+  // Must exceed the proxy's worst-case VirusTotal polling budget (~24 s)
+  // plus round-trip latency, otherwise a first-ever scan of an unknown URL
+  // aborts client-side just before the verdict arrives.
+  static const Duration _timeout = Duration(seconds: 40);
 
   Future<ScanResult> fetchVerdict(String url) async {
     if (!AppConfig.isConfigured) {

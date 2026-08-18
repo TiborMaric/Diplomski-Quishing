@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -71,20 +73,63 @@ class _ResultScreenState extends State<ResultScreen> {
   }
 }
 
-class _LoadingView extends StatelessWidget {
+/// Spinner for the verdict lookup. A URL VirusTotal has never seen has to
+/// be submitted and polled, which can take ~25 s, so after 6 s a second
+/// line explains the wait rather than leaving the user staring at a
+/// spinner that looks stuck.
+class _LoadingView extends StatefulWidget {
   const _LoadingView();
 
   @override
+  State<_LoadingView> createState() => _LoadingViewState();
+}
+
+class _LoadingViewState extends State<_LoadingView> {
+  static const Duration _slowThreshold = Duration(seconds: 6);
+
+  Timer? _timer;
+  bool _slow = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _timer = Timer(_slowThreshold, () {
+      if (mounted) setState(() => _slow = true);
+    });
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          CircularProgressIndicator(),
-          SizedBox(height: 16),
-          Text(AppStrings.checkingUrl),
-        ],
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 32),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            const CircularProgressIndicator(),
+            const SizedBox(height: 16),
+            const Text(AppStrings.checkingUrl),
+            AnimatedOpacity(
+              opacity: _slow ? 1 : 0,
+              duration: const Duration(milliseconds: 300),
+              child: const Padding(
+                padding: EdgeInsets.only(top: 12),
+                child: Text(
+                  AppStrings.checkingUrlSlow,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 13, height: 1.4),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

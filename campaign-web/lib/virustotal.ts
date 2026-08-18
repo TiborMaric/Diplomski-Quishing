@@ -88,8 +88,8 @@ export async function getExistingAnalysis(url: string): Promise<VTStats | null> 
 
 /**
  * Submit a brand-new URL for analysis, then poll until VT marks it
- * "completed" (max ~8 seconds of polling to stay under Vercel Hobby's
- * 10 s function ceiling). Returns the stats block, or null on timeout.
+ * "completed" (max ~24 seconds of polling, comfortably under the route's
+ * 60 s maxDuration). Returns the stats block, or null on timeout.
  */
 export async function submitAndPoll(url: string): Promise<VTStats | null> {
   const submitRes = await fetch(`${VT_BASE}/urls`, {
@@ -110,8 +110,8 @@ export async function submitAndPoll(url: string): Promise<VTStats | null> {
   const analysisId = submitJson.data?.id;
   if (!analysisId) return null;
 
-  // Poll up to 4 times at 2 s intervals = 8 s max.
-  for (let attempt = 0; attempt < 4; attempt++) {
+  // Poll up to 12 times at 2 s intervals = 24 s max.
+  for (let attempt = 0; attempt < 12; attempt++) {
     await new Promise((resolve) => setTimeout(resolve, 2000));
 
     const pollRes = await fetch(`${VT_BASE}/analyses/${analysisId}`, {
